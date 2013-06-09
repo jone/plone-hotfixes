@@ -82,14 +82,6 @@ th, td {
   border-bottom:1px solid #e5e5e5;
 }
 
-#hotfix-table td {
-  border-bottom: none;
-}
-
-#hotfix-table tbody{
-  border-bottom:1px solid #e5e5e5;
-}
-
 dt {
   color:#444;
   font-weight:700;
@@ -280,4 +272,47 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+
+
+
+#hotfix-table td {
+  border-bottom: none;
+}
+
+#hotfix-table tbody{
+  border-bottom:1px solid #e5e5e5;
+}
+
+#hotfix-table .version-range {
+  color: #CCC;
+}
+
+#hotfix-table ul {
+  padding-left: 0;
+}
+
+#hotfix-table .version-2 {
+  color: #C02116;
+}
+
+#hotfix-table .version-3 {
+  color: #B65900;
+}
+
+#hotfix-table .version-4 {
+  color: #004A88;
+}
+
+#hotfix-table .version-4-1 {
+  color: #009EAF;
+}
+
+#hotfix-table .version-4-2 {
+  color: #007785;
+}
+
+#hotfix-table .version-4-3 {
+  color: #228D2F;
 }

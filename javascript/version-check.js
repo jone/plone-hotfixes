@@ -1,5 +1,20 @@
 $(document).ready(function() {
 
+  function colorize_version(version) {
+    cls = 'version-'.concat(version[0]).concat(' version-').concat(
+        version.substr(0, 3).replace('.', '-'));
+    return $('<span/>').text(version).attr('class', cls);
+  }
+
+  function append_colorized_versions(container, from_version, to_version) {
+    container.append(colorize_version(from_version));
+    if(to_version) {
+      container.append($('<span />').text(' to ').attr('class', 'version-range'));
+      container.append(colorize_version(to_version));
+    }
+    return container;
+  }
+
   var hotfix_table = {};
 
   for (var name in hotfixes) {
@@ -17,12 +32,12 @@ $(document).ready(function() {
 
     var $required = $('<ul/>').appendTo($('<td/>').appendTo($tr));
     $(hotfix['required_for_plone']).each(function() {
-      $required.append($('<li/>').text(this[0].concat(' to ').concat(this[1])));
+      $required.append(append_colorized_versions($('<li/>'), this[0], this[1]));
     });
 
     var $fixed = $('<ul/>').appendTo($('<td/>').appendTo($tr));
     $(hotfix['fixed_in_plone']).each(function() {
-      $fixed.append($('<li/>').text(this));
+      $fixed.append($('<li/>').append(colorize_version(this)));
     });
 
     if(typeof(hotfix['note']) !== 'undefined') {
