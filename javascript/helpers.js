@@ -22,6 +22,60 @@ function parse_version(version) {
 }
 
 
+function cmp_versions(first, second) {
+  if (first >= second && first <= second) {
+    return 0;
+  }
+
+  if (first.length < second.length) {
+    return cmp_versions(second, first) * -1;
+  }
+
+  var first_part, second_part;
+  for (var i=0; i<first.length; i++) {
+    first_part = first[i];
+    second_part = second[i];
+    if (first_part === second_part) {
+      continue;
+    }
+
+    if (typeof(second_part) === 'undefined') {
+      return isNaN(first_part) ? -1 : 1;
+    }
+
+    if (isNaN(first_part) != isNaN(second_part)) {
+      return isNaN(first_part) ? -1 : 1;
+    }
+
+    return first_part > second_part ? 1 : -1;
+  }
+
+  throw 'unexpected comparison state in cmp_versions('.concat(first_part).concat(
+      ', ').concat(second_part).concat(')');
+}
+
+function compare_versions(first, operator, second) {
+  if (operator == '==') {
+    return cmp_versions(first, second) === 0;
+  }
+
+  if ((operator == '<=' || operator == '>=') && cmp_versions(first, second) === 0) {
+    return true;
+  }
+
+  if (operator == '>' || operator == '>=') {
+    return cmp_versions(first, second) == 1;
+  }
+
+  if (operator == '<' || operator == '<=') {
+    return cmp_versions(first, second) == -1;
+  }
+
+  throw 'compare_versions: unkown operator: '.concate(operator);
+}
+
+
+
 function compare_requirement_list(version, requirements) {
   version = parse_version(version);
 
@@ -29,11 +83,12 @@ function compare_requirement_list(version, requirements) {
     var first = parse_version(requirements[r][0]);
     var last = requirements[r][1] !== null ? parse_version(requirements[r][1]) : null;
 
-    if (last === null && version >= first) {
+    if (last === null && compare_versions(version, '>=', first)) {
       return true;
     }
 
-    if (version >= first && version <= last) {
+    if (compare_versions(version, '>=', first) &&
+        compare_versions(version, '<=', last)) {
       return true;
     }
   }
@@ -59,6 +114,8 @@ function get_hotfixes_required_for(plone_version, requirements) {
 
 if(typeof(module) !== "undefined") {
   module.exports.parse_version = parse_version;
+  module.exports.cmp_versions = cmp_versions;
+  module.exports.compare_versions = compare_versions;
   module.exports.compare_requirement_list = compare_requirement_list;
   module.exports.get_hotfixes_required_for = get_hotfixes_required_for;
 }

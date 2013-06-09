@@ -19,6 +19,73 @@ describe('parse_version', function() {
 });
 
 
+describe('cmp_versions', function() {
+  var cmp_versions = require('../javascript/helpers.js').cmp_versions;
+
+  it('should return 0 when versions are equal', function() {
+    assert.equal(0, cmp_versions([1, 0], [1, 0]));
+    assert.equal(0, cmp_versions([1, 0, 'a', 1], [1, 0, 'a', 1]));
+  });
+
+  it('should return 1 when first greater than last', function() {
+    assert.equal(1, cmp_versions([1, 1], [1, 0]));
+    assert.equal(1, cmp_versions([1, 1, 'a', 1], [1, 0, 'a', 1]));
+  });
+
+  it('should return -1 when first less than last', function() {
+    assert.equal(-1, cmp_versions([1, 0], [1, 1]));
+    assert.equal(-1, cmp_versions([1, 0, 'a', 1], [1, 1, 'a', 1]));
+  });
+
+  it('should be able to compare alpha and stable releases properly', function() {
+    assert.equal(1, cmp_versions([1, 0], [1, 'a', 1]));
+  });
+
+  it('should bugfix releases are greater than it stable ones', function() {
+    assert.equal(1, cmp_versions([1, 0, 1], [1, 0]));
+  });
+
+  it('should be able to compare minor alpha and stable releases properly', function() {
+    assert.equal(1, cmp_versions([1, 0], [1, 0, 'a', 1]));
+  });
+
+});
+
+
+describe('version comparsing based on parse_version', function() {
+  var parse_version = require('../javascript/helpers.js').parse_version;
+  var compare_versions = require('../javascript/helpers.js').compare_versions;
+
+  it('should make 4.1 > 4.0', function() {
+    assert(compare_versions(parse_version('4.1'), '>', parse_version('4.0')));
+  });
+
+  it('should make 4.1 > 4', function() {
+    assert(compare_versions(parse_version('4.1'), '>', parse_version('4')));
+  });
+
+  it('should make 4.1b1 > 4.1a1', function() {
+    assert(compare_versions(parse_version('4.1b1'), '>', parse_version('4.1a1')));
+  });
+
+  it('should not make 4.1a1 > 4.1a1', function() {
+    assert(! compare_versions(parse_version('4.1a1'), '>', parse_version('4.1a1')));
+  });
+
+  it('should make 4.1a1 >= 4.1a1', function() {
+    assert(compare_versions(parse_version('4.1a1'), '>=', parse_version('4.1a1')));
+  });
+
+  it('should make 4.1a1 <= 4.1a1', function() {
+    assert(compare_versions(parse_version('4.1a1'), '<=', parse_version('4.1a1')));
+  });
+
+  it('should make 4.1 > 4.1a1', function() {
+    assert(compare_versions(parse_version('4.1'), '>', parse_version('4.1a1')));
+  });
+});
+
+
 describe('compare_requirement_list', function() {
   var compare_requirement_list = require('../javascript/helpers.js').compare_requirement_list;
 
