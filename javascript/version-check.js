@@ -26,9 +26,16 @@ $(document).ready(function() {
     var $tr = $('<tr/>').appendTo($tbody);
 
     var $firsttd = $('<td/>').appendTo($tr);
-    $firsttd.append($('<div/>').append($('<b/>').append(
-        $('<a/>').text(name).attr('href',
-                                  'https://pypi.python.org/pypi/'.concat(name)))));
+    $firsttd.append($('<div/>').append($('<b/>').text(name)));
+    var $links = $firsttd.append($('<div/>'));
+    $links.append($('<a/>').text("pypi").attr(
+        'href', 'https://pypi.python.org/pypi/'.concat(name)));
+
+    if(typeof(hotfix['plone.org']) !== 'undefined') {
+      $links.append($('<span> | </span>'));
+      $links.append($('<a/>').text("plone.org").attr(
+          'href', hotfix['plone.org']));
+    }
 
     var $required = $('<ul/>').appendTo($('<td/>').appendTo($tr));
     $(hotfix['required_for_plone']).each(function() {
