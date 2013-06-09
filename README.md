@@ -9,6 +9,6 @@ Find out which hotfixes to apply for your Plone version at the
 Run the tests with mocha:
 
 ```bash
-$ npm install -g mocha
+$ npm install
 $ mocha
 ```
