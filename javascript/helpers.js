@@ -42,8 +42,23 @@ function compare_requirement_list(version, requirements) {
 }
 
 
+function get_hotfixes_required_for(plone_version, requirements) {
+  var result = [];
+
+  for (var name in requirements) {
+    var requirement = requirements[name];
+    if (compare_requirement_list(plone_version, requirement["required_for_plone"])) {
+      result.push(name);
+    }
+  }
+
+  return result;
+}
+
+
 
 if(typeof(module) !== "undefined") {
   module.exports.parse_version = parse_version;
   module.exports.compare_requirement_list = compare_requirement_list;
+  module.exports.get_hotfixes_required_for = get_hotfixes_required_for;
 }
