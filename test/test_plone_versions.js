@@ -25,6 +25,7 @@ describe("Plone 3.0", function() {
             "Products.PloneHotfix20110531",
             "Products.PloneHotfix20110720",
             "Products.PloneHotfix20121106",
+            "Products.PloneHotfix20130611",
             "Products.Zope_Hotfix_CVE_2010_1104",
             "Products.Zope_Hotfix_20110622"
         ],
@@ -42,6 +43,7 @@ describe("Plone 3.3", function() {
             "Products.PloneHotfix20110531",
             "Products.PloneHotfix20110720",
             "Products.PloneHotfix20121106",
+            "Products.PloneHotfix20130611",
             "Products.Zope_Hotfix_CVE_2010_1104",
             "Products.Zope_Hotfix_20110622"
         ],
@@ -59,6 +61,7 @@ describe("Plone 3.3.5", function() {
             "Products.PloneHotfix20110531",
             "Products.PloneHotfix20110720",
             "Products.PloneHotfix20121106",
+            "Products.PloneHotfix20130611",
             "Products.Zope_Hotfix_20110622"
         ],
         "3.3.5");
@@ -74,7 +77,8 @@ describe("Plone 3.3.6", function() {
         [
             "Products.PloneHotfix20110531",
             "Products.PloneHotfix20110720",
-            "Products.PloneHotfix20121106"
+            "Products.PloneHotfix20121106",
+            "Products.PloneHotfix20130611"
         ],
         "3.3.6");
   });
@@ -92,6 +96,7 @@ describe("Plone 4.0", function() {
             "Products.PloneHotfix20110720",
             "Products.PloneHotfix20110928",
             "Products.PloneHotfix20121106",
+            "Products.PloneHotfix20130611",
             "Products.Zope_Hotfix_20111024",
             "Products.Zope_Hotfix_CVE_2010_3198",
             "Products.Zope_Hotfix_20110622"
@@ -110,6 +115,7 @@ describe("Plone 4.0.9", function() {
         [
             "Products.PloneHotfix20110928",
             "Products.PloneHotfix20121106",
+            "Products.PloneHotfix20130611",
             "Products.Zope_Hotfix_20111024",
             "Products.Zope_Hotfix_CVE_2010_3198"
         ],
@@ -127,6 +133,7 @@ describe("Plone 4.0.10", function() {
     assertRequires(
         [
             "Products.PloneHotfix20121106",
+            "Products.PloneHotfix20130611",
             "Products.Zope_Hotfix_20111024"
         ],
         "4.0.10");
@@ -143,6 +150,7 @@ describe("Plone 4.1", function() {
         [
             "Products.PloneHotfix20110928",
             "Products.PloneHotfix20121106",
+            "Products.PloneHotfix20130611",
             "Products.Zope_Hotfix_20111024",
             "Products.Zope_Hotfix_CVE_2010_3198"
         ],
@@ -158,7 +166,8 @@ describe("Plone 4.1.6", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20121106"
+            "Products.PloneHotfix20121106",
+            "Products.PloneHotfix20130611"
         ],
         "4.1.5");
   });
@@ -173,7 +182,8 @@ describe("Plone 4.2", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20121106"
+            "Products.PloneHotfix20121106",
+            "Products.PloneHotfix20130611"
         ],
         "4.2");
   });
@@ -188,6 +198,7 @@ describe("Plone 4.2.5", function() {
   it('should require fixes', function() {
     assertRequires(
         [
+            "Products.PloneHotfix20130611"
         ],
         "4.2.5");
   });
@@ -201,6 +212,7 @@ describe("Plone 4.3", function() {
   it('should require fixes', function() {
     assertRequires(
         [
+            "Products.PloneHotfix20130611"
         ],
         "4.3");
   });

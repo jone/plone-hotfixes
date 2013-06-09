@@ -27,6 +27,12 @@ var hotfixes = {
     ],
     "fixed_in_plone": ["4.2.5", "4.3b1"]},
 
+  "Products.PloneHotfix20130611": {
+    "required_for_plone": [
+        ["2.0", null]
+    ],
+    "fixed_in_plone": []},
+
   "Products.Zope_Hotfix_20111024": {
     "required_for_plone": [
         ["4.0", "4.1.3"],
