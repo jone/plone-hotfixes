@@ -7,10 +7,15 @@ $(document).ready(function() {
   }
 
   function append_colorized_versions(container, from_version, to_version) {
-    container.append(colorize_version(from_version));
     if(to_version) {
+      container.append(colorize_version(from_version));
       container.append($('<span />').text(' to ').attr('class', 'version-range'));
       container.append(colorize_version(to_version));
+    }
+
+    else {
+      container.append($('<span />').text('>=').attr('class', 'version-range'));
+      container.append(colorize_version(from_version));
     }
     return container;
   }
