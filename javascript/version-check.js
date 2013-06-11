@@ -42,6 +42,12 @@ $(document).ready(function() {
           'href', hotfix['plone.org']));
     }
 
+    $.getJSON('http://pypi.python.org/pypi/'.concat(name).concat('/json?callback=?'), function(data) {
+      var $version = $('<div/>').append($('<span/>').text('Version: ')).append(
+          $('<i/>').text(data.info.version));
+      hotfix_table[data.info.name].find('td:first').append($version);
+    });
+
     var $required = $('<ul/>').appendTo($('<td/>').appendTo($tr));
     $(hotfix['required_for_plone']).each(function() {
       $required.append(append_colorized_versions($('<li/>'), this[0], this[1]));
