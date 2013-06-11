@@ -1,7 +1,7 @@
 
 var hotfixes = {
 
-  "Products.PloneHotfix20130611 ?": {
+  "Products.PloneHotfix20130611": {
     "required_for_plone": [
         ["2.0", null]
     ],
