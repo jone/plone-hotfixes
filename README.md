@@ -17,6 +17,7 @@ See also the [Plone version tests](test/test_plone_versions.js).
 Install and run the tests with mocha:
 
 ```bash
+$ brew install npm
 $ npm install
 $ mocha
 ```
