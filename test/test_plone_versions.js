@@ -169,7 +169,7 @@ describe("Plone 4.1.6", function() {
             "Products.PloneHotfix20130611",
             "Products.PloneHotfix20121106"
         ],
-        "4.1.5");
+        "4.1.6");
   });
 
 });
