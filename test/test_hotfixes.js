@@ -101,14 +101,14 @@ describe('Products.PloneHotfix20121106', function() {
          "3.0",
          "4.0",
          "4.1.6",
-         "4.2.4",
+         "4.2.2",
          "4.3a2"],
         "Products.PloneHotfix20121106");
   });
 
   it('should not require hotfix', function() {
     assert_hotfixes_not_required_by(
-        ["4.2.5", "4.3b1", "4.3rc1", "4.3", "4.3.1"],
+        ["4.2.3", "4.3b1", "4.3rc1", "4.3", "4.3.1"],
         "Products.PloneHotfix20121106");
   });
 });

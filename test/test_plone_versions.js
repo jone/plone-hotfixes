@@ -193,6 +193,39 @@ describe("Plone 4.2", function() {
 
 
 
+
+describe("Plone 4.2.2", function() {
+
+  it('should require fixes', function() {
+    assertRequires(
+        [
+            "Products.PloneHotfix20130611",
+            "Products.PloneHotfix20121106"
+        ],
+        "4.2.2");
+  });
+
+});
+
+
+
+
+
+describe("Plone 4.2.3", function() {
+
+  it('should require fixes', function() {
+    assertRequires(
+        [
+            "Products.PloneHotfix20130611"
+        ],
+        "4.2.3");
+  });
+
+});
+
+
+
+
 describe("Plone 4.2.5", function() {
 
   it('should require fixes', function() {

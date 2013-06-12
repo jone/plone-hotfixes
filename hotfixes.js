@@ -10,10 +10,10 @@ var hotfixes = {
 
   "Products.PloneHotfix20121106": {
     "required_for_plone": [
-        ["2.0", "4.2.4"],
+        ["2.0", "4.2.2"],
         ["4.3a1", "4.3a2"]
     ],
-    "fixed_in_plone": ["4.2.5", "4.3b1"],
+    "fixed_in_plone": ["4.2.3", "4.3b1"],
     "plone.org": "http://plone.org/products/plone-hotfix/releases/20121106"},
 
   "Products.Zope_Hotfix_20111024": {
