@@ -22,7 +22,7 @@ describe("Plone 3.0", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611",
+            "Products.PloneHotfix20130618",
             "Products.PloneHotfix20121106",
             "Products.PloneHotfix20110720",
             "Products.Zope_Hotfix_20110622",
@@ -40,7 +40,7 @@ describe("Plone 3.3", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611",
+            "Products.PloneHotfix20130618",
             "Products.PloneHotfix20121106",
             "Products.PloneHotfix20110720",
             "Products.Zope_Hotfix_20110622",
@@ -58,7 +58,7 @@ describe("Plone 3.3.5", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611",
+            "Products.PloneHotfix20130618",
             "Products.PloneHotfix20121106",
             "Products.PloneHotfix20110720",
             "Products.Zope_Hotfix_20110622",
@@ -75,7 +75,7 @@ describe("Plone 3.3.6", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611",
+            "Products.PloneHotfix20130618",
             "Products.PloneHotfix20121106",
             "Products.PloneHotfix20110720",
             "Products.PloneHotfix20110531"
@@ -92,7 +92,7 @@ describe("Plone 4.0", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611",
+            "Products.PloneHotfix20130618",
             "Products.PloneHotfix20121106",
             "Products.Zope_Hotfix_20111024",
             "Products.PloneHotfix20110928",
@@ -113,7 +113,7 @@ describe("Plone 4.0.9", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611",
+            "Products.PloneHotfix20130618",
             "Products.PloneHotfix20121106",
             "Products.Zope_Hotfix_20111024",
             "Products.PloneHotfix20110928",
@@ -132,7 +132,7 @@ describe("Plone 4.0.10", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611",
+            "Products.PloneHotfix20130618",
             "Products.PloneHotfix20121106",
             "Products.Zope_Hotfix_20111024"
         ],
@@ -148,7 +148,7 @@ describe("Plone 4.1", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611",
+            "Products.PloneHotfix20130618",
             "Products.PloneHotfix20121106",
             "Products.Zope_Hotfix_20111024",
             "Products.PloneHotfix20110928",
@@ -166,7 +166,7 @@ describe("Plone 4.1.6", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611",
+            "Products.PloneHotfix20130618",
             "Products.PloneHotfix20121106"
         ],
         "4.1.6");
@@ -182,7 +182,7 @@ describe("Plone 4.2", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611",
+            "Products.PloneHotfix20130618",
             "Products.PloneHotfix20121106"
         ],
         "4.2");
@@ -199,7 +199,7 @@ describe("Plone 4.2.2", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611",
+            "Products.PloneHotfix20130618",
             "Products.PloneHotfix20121106"
         ],
         "4.2.2");
@@ -216,7 +216,7 @@ describe("Plone 4.2.3", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611"
+            "Products.PloneHotfix20130618"
         ],
         "4.2.3");
   });
@@ -231,7 +231,7 @@ describe("Plone 4.2.5", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611"
+            "Products.PloneHotfix20130618"
         ],
         "4.2.5");
   });
@@ -245,7 +245,7 @@ describe("Plone 4.3", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20130611"
+            "Products.PloneHotfix20130618"
         ],
         "4.3");
   });
