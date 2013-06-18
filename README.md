@@ -19,5 +19,5 @@ Install and run the tests with mocha:
 ```bash
 $ brew install npm
 $ npm install
-$ mocha
+$ node_modules/mocha/bin/mocha
 ```
