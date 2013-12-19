@@ -55,7 +55,7 @@ var hotfixes = {
         ["4.1a1", "4.1rc3"]
     ],
     "fixed_in_plone": ["3.3.6", "4.0.8", "4.1"],
-    "note": "Only required when Products.PloneHotfix20110720 is not installed",
+    "note": "Only required when Products.PloneHotfix20110720 is installed",
     "plone.org": "http://plone.org/products/plone-hotfix/releases/20110622"},
 
   "Products.PloneHotfix20110531": {
