@@ -70,8 +70,7 @@ var hotfixes = {
         ["4.1", "4.1"],
         ["4.2a1", "4.2a2"]
     ],
-    "fixed_in_plone": ["4.0.10", "4.1.1", "4.2a3"],
-    "note": "This patch is included by Products.PloneHotfix20110928"},
+    "fixed_in_plone": ["4.0.10", "4.1.1", "4.2a3"]},
 
   "Products.Zope_Hotfix_CVE_2010_1104": {
     "required_for_plone": [
