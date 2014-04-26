@@ -62,6 +62,12 @@ describe('Products.PloneHotfix20131210', function() {
         ["3.2", "3.1", "2.0"],
         "Products.PloneHotfix20131210");
   });
+
+  it('should not be fixed in 4.3.3 and newer', function() {
+    assert_hotfixes_not_required_by(
+        ["4.3.3"],
+        "Products.PloneHotfix20131210");
+  });
 });
 
 
