@@ -68,13 +68,17 @@ $(document).ready(function() {
   $("#plone-version-check input").keyup(function() {
     if(!$(this).val()) {
       $('#hotfix-table tbody').show();
+      $('#buildout-hint').hide();
       return;
     }
 
     $('#hotfix-table tbody').hide();
+    $('#buildout-hint').show();
+    $('#buildout').text('[instance]\neggs +=\n');
     if($(this).val()) {
       $(get_hotfixes_required_for($(this).val(), hotfixes)).each(function() {
         hotfix_table[this].show();
+        $('#buildout').text($('#buildout').text() + '    ' + this + '\n');
       });
     }
   }).focus();

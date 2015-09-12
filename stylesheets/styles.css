@@ -324,3 +324,8 @@ footer {
 #hotfix-table .version-5 {
   color: #d25299;
 }
+
+
+#buildout-hint {
+  display: none;
+}
