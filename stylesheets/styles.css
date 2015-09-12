@@ -293,6 +293,10 @@ footer {
   padding-left: 0;
 }
 
+#hotfix-table .version-1 {
+  color: #b8860b;
+}
+
 #hotfix-table .version-2 {
   color: #C02116;
 }
@@ -315,4 +319,8 @@ footer {
 
 #hotfix-table .version-4-3 {
   color: #228D2F;
+}
+
+#hotfix-table .version-5 {
+  color: #d25299;
 }
