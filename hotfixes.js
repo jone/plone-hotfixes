@@ -1,6 +1,13 @@
 
 var hotfixes = {
 
+  "Products.PloneHotfix20150910": {
+    "required_for_plone": [
+        ["1.0", "5.0"]
+    ],
+    "fixed_in_plone": [],
+    "plone.org": "https://plone.org/products/plone-hotfix/releases/20150910"},
+
   "Products.PloneHotfix20131210": {
     "required_for_plone": [
         ["3.3", "4.3.2"]

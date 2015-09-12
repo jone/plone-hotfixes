@@ -46,6 +46,23 @@ function assert_hotfixes_not_required_by(plone_versions, hotfix) {
 /* ************************ */
 
 
+describe('Products.PloneHotfix20150910', function() {
+  it('should be required for all current Plone versions.', function() {
+    assert_hotfixes_required_by(
+          ["1.0",
+           "2.0",
+           "3.2", "3.2.1", "3.2.2", "3.2.3",
+           "3.3", "3.3", "3.3.1", "3.3.2", "3.3.3", "3.3.4", "3.3.5", "3.3.6",
+           "4.0", "4.0", "4.0.1", "4.0.10", "4.0.2", "4.0.3", "4.0.4", "4.0.5", "4.0.6", "4.0.6.1", "4.0.7", "4.0.8", "4.0.9",
+           "4.1", "4.1", "4.1.1", "4.1.2", "4.1.3", "4.1.4", "4.1.5", "4.1.6",
+           "4.2", "4.2", "4.2.1", "4.2.2", "4.2.3", "4.2.4", "4.2.5", "4.2.6", "4.2.7",
+           "4.3", "4.3", "4.3.1", "4.3.2", "4.3.3", "4.3.4", "4.3.5", "4.3.6", "4.3a1", "4.3a2", "4.3b1", "4.3b2",
+           "5.0"],
+          "Products.PloneHotfix20150910");
+  });
+});
+
+
 describe('Products.PloneHotfix20131210', function() {
   it('should be required for Plone 4 and Plone 3.3 series', function() {
     assert_hotfixes_required_by(
