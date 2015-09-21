@@ -3,7 +3,7 @@ var hotfixes = {
 
   "Products.PloneHotfix20150910": {
     "required_for_plone": [
-        ["1.0", "5.0"]
+        ["1.0", "5.0rc1"]
     ],
     "fixed_in_plone": [],
     "plone.org": "https://plone.org/products/plone-hotfix/releases/20150910"},

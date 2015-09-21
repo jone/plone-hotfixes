@@ -57,8 +57,14 @@ describe('Products.PloneHotfix20150910', function() {
            "4.1", "4.1", "4.1.1", "4.1.2", "4.1.3", "4.1.4", "4.1.5", "4.1.6",
            "4.2", "4.2", "4.2.1", "4.2.2", "4.2.3", "4.2.4", "4.2.5", "4.2.6", "4.2.7",
            "4.3", "4.3", "4.3.1", "4.3.2", "4.3.3", "4.3.4", "4.3.5", "4.3.6", "4.3a1", "4.3a2", "4.3b1", "4.3b2",
-           "5.0"],
+           "5.0rc1"],
           "Products.PloneHotfix20150910");
+  });
+
+  it('should not be required for versions 5.0rc2 and newer', function() {
+    assert_hotfixes_not_required_by(
+        ["5.0rc2"],
+        "Products.PloneHotfix20150910");
   });
 });
 
