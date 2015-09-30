@@ -295,6 +295,19 @@ describe("Plone 4.3.6", function() {
 
 
 
+describe("Plone 4.3.7", function() {
+
+  it('should require fixes', function() {
+    assertRequires(
+        [
+        ],
+        "4.3.7");
+  });
+
+});
+
+
+
 describe("Plone 5.0rc1", function() {
 
   it('should require fixes', function() {
