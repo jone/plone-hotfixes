@@ -281,6 +281,20 @@ describe("Plone 4.3", function() {
 
 
 
+describe("Plone 4.3.6", function() {
+
+  it('should require fixes', function() {
+    assertRequires(
+        [
+            "Products.PloneHotfix20150910"
+        ],
+        "4.3.6");
+  });
+
+});
+
+
+
 describe("Plone 5.0rc1", function() {
 
   it('should require fixes', function() {
@@ -294,6 +308,7 @@ describe("Plone 5.0rc1", function() {
 });
 
 
+
 describe("Plone 5.0rc2", function() {
 
   it('should require fixes', function() {
@@ -304,6 +319,8 @@ describe("Plone 5.0rc2", function() {
   });
 
 });
+
+
 
 describe("Plone 5.0", function() {
 
