@@ -304,3 +304,14 @@ describe("Plone 5.0rc2", function() {
   });
 
 });
+
+describe("Plone 5.0", function() {
+
+  it('should require fixes', function() {
+    assertRequires(
+        [
+        ],
+        "5.0");
+  });
+
+});
