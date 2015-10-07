@@ -1,6 +1,13 @@
 
 var hotfixes = {
 
+  "plone4.csrffixes": {
+    "required_for_plone": [
+        ["4", "4.99.??"]
+    ],
+    "fixed_in_plone": ["5.0a1"],
+    "plone.org": "https://plone.org/products/plone-hotfix/releases/20151006"},
+
   "Products.PloneHotfix20150910": {
     "required_for_plone": [
         ["1.0", "4.3.6"],
