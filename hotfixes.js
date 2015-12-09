@@ -8,6 +8,14 @@ var hotfixes = {
     "fixed_in_plone": ["5.0a1"],
     "plone.org": "https://plone.org/products/plone-hotfix/releases/20151006"},
 
+  "Products.PloneHotfix20151208": {
+    "required_for_plone": [
+        ["4", "4.3.7"],
+        ["5.0a1", "5.0"]
+    ],
+    "fixed_in_plone": ["4.3.8", "5.0.1"],
+    "plone.org": "https://plone.org/products/plone-hotfix/releases/20151208"},
+
   "Products.PloneHotfix20150910": {
     "required_for_plone": [
         ["1.0", "4.3.6"],
