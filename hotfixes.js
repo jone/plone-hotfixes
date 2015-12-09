@@ -10,7 +10,7 @@ var hotfixes = {
 
   "Products.PloneHotfix20151208": {
     "required_for_plone": [
-        ["4", "4.3.7"],
+        ["2.1", "4.3.7"],
         ["5.0a1", "5.0"]
     ],
     "fixed_in_plone": ["4.3.8", "5.0.1"],
