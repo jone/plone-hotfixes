@@ -1,6 +1,14 @@
 
 var hotfixes = {
 
+  "Products.PloneHotfix20160419": {
+    "required_for_plone": [
+          ["4", "4.3.9"],
+          ["5.0a1", "5.1a1"]
+    ],
+    "fixed_in_plone": ["4.3.10", "5.0.5"],
+    "plone.org": "https://plone.org/products/plone/security/advisories/20160419-preannounce"},
+
   "plone4.csrffixes": {
     "required_for_plone": [
         ["4", "4.99.??"]
