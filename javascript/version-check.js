@@ -42,7 +42,7 @@ $(document).ready(function() {
           'href', hotfix['plone.org']));
     }
 
-    $.getJSON('http://pypi.python.org/pypi/'.concat(name).concat('/json?callback=?'), function(data) {
+    $.getJSON('http://pypi.python.org/pypi/'.concat(name).concat('/json'), function(data) {
       var $version = $('<div/>').append($('<span/>').text('Version: ')).append(
           $('<i/>').text(data.info.version));
       hotfix_table[data.info.name].find('td:first').append($version);
