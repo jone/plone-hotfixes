@@ -377,6 +377,18 @@ describe("Plone 4.3.9", function() {
 });
 
 
+describe("Plone 4.3.10", function() {
+
+  it('should require fixes', function() {
+    assertRequires(
+        [
+            "plone4.csrffixes"
+        ],
+        "4.3.10");
+  });
+
+});
+
 
 describe("Plone 5.0a1", function() {
 
@@ -418,6 +430,21 @@ describe("Plone 5.0rc2", function() {
             "Products.PloneHotfix20151208"
         ],
         "5.0rc2");
+  });
+
+});
+
+
+
+describe("Plone 5.0rc3", function() {
+
+  it('should require fixes', function() {
+    assertRequires(
+        [
+            "Products.PloneHotfix20160419",
+            "Products.PloneHotfix20151208"
+        ],
+        "5.0rc3");
   });
 
 });
@@ -485,6 +512,32 @@ describe("Plone 5.0.4", function() {
             "Products.PloneHotfix20160419"
         ],
         "5.0.4");
+  });
+
+});
+
+
+describe("Plone 5.0.5", function() {
+
+  it('should require fixes', function() {
+    assertRequires(
+        [
+            "Products.PloneHotfix20160419"
+        ],
+        "5.0.5");
+  });
+
+});
+
+
+describe("Plone 5.0.6", function() {
+
+  it('should require fixes', function() {
+    assertRequires(
+        [
+            "Products.PloneHotfix20160419"
+        ],
+        "5.0.6");
   });
 
 });
