@@ -522,7 +522,6 @@ describe("Plone 5.0.5", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20160419"
         ],
         "5.0.5");
   });
@@ -535,7 +534,6 @@ describe("Plone 5.0.6", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20160419"
         ],
         "5.0.6");
   });
