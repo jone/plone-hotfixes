@@ -4,27 +4,42 @@ var hotfixes = {
   "Products.PloneHotfix20170117": {
     "required_for_plone": [
           ["3", "3.99.??"],
-          ["4", "4.99.??"],
-          ["5", "5.99.??"]
+          ["4", "4.3.11"],
+          ["5", "5.0.6"],
+          ["5.1a1", "5.1a2"]
     ],
-    "fixed_in_plone": [],
+    "fixed_in_plone": [
+          "4.3.12",
+          "5.0.7",
+          "5.1b1"
+    ],
     "plone.org": "https://plone.org/security/hotfix/20170117"},
 
   "Products.PloneHotfix20161129": {
     "required_for_plone": [
-          ["4", "4.99.??"],
-          ["5", "5.99.??"]
+          ["4", "4.3.11"],
+          ["5", "5.0.6"],
+          ["5.1a1", "5.1a2"]
     ],
-    "fixed_in_plone": [],
+    "fixed_in_plone": [
+          "4.3.12",
+          "5.0.7",
+          "5.1b1"
+    ],
     "plone.org": "https://plone.org/security/hotfix/20161129"},
 
   "Products.PloneHotfix20160830": {
     "required_for_plone": [
           ["3", "3.99.??"],
-          ["4", "4.99.??"],
-          ["5", "5.99.??"]
+          ["4", "4.3.11"],
+          ["5", "5.0.6"],
+          ["5.1a1", "5.1a2"]
     ],
-    "fixed_in_plone": [],
+    "fixed_in_plone": [
+          "4.3.12",
+          "5.0.7",
+          "5.1b1"
+    ],
     "plone.org": "https://plone.org/security/hotfix/20160830"},
 
   "Products.PloneHotfix20160419": {
