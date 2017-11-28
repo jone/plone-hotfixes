@@ -1,6 +1,16 @@
 
 var hotfixes = {
 
+  "Products.PloneHotfix20171128": {
+    "required_for_plone": [
+          ["3", "3.99.??"],
+          ["4", "4.99.??"],
+          ["5", "5.99.??"]
+    ],
+    "fixed_in_plone": [
+    ],
+    "plone.org": "https://plone.org/security/hotfix/20171128"},
+
   "Products.PloneHotfix20170117": {
     "required_for_plone": [
           ["3", "3.99.??"],
