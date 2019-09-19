@@ -4,10 +4,12 @@ var hotfixes = {
   "Products.PloneHotfix20171128": {
     "required_for_plone": [
           ["3", "3.99.??"],
-          ["4", "4.99.??"],
-          ["5", "5.99.??"]
+          ["4", "4.3.16"],
+          ["5", "5.1rc1"]
     ],
     "fixed_in_plone": [
+          "4.3.17",
+          "5.2a1"
     ],
     "plone.org": "https://plone.org/security/hotfix/20171128"},
 
