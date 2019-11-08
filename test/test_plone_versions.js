@@ -467,7 +467,6 @@ describe("Plone 4.3.16", function() {
   it('should require fixes', function() {
     assertRequires(
         [
-            "Products.PloneHotfix20171128",
             "plone4.csrffixes"
         ],
         "4.3.16");
@@ -679,6 +678,31 @@ describe("Plone 5.0.6", function() {
             "Products.PloneHotfix20160830"
         ],
         "5.0.6");
+  });
+
+});
+
+
+describe("Plone 5.0.9", function() {
+
+  it('should require fixes', function() {
+    assertRequires(
+        [
+            "Products.PloneHotfix20171128",
+        ],
+        "5.0.9");
+  });
+
+});
+
+
+describe("Plone 5.0.10", function() {
+
+  it('should require fixes', function() {
+    assertRequires(
+        [
+        ],
+        "5.0.10");
   });
 
 });
