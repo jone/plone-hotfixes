@@ -1,6 +1,15 @@
 
 var hotfixes = {
 
+  "Products.PloneHotfix20210518": {
+    "required_for_plone": [
+          ["4.3", "4.3.99"],
+          ["5", "5.99.??"],
+    ],
+    "fixed_in_plone": [
+    ],
+    "plone.org": "https://plone.org/security/announcements/security-patch-released-20210518"},
+
   "Products.PloneHotfix20200121": {
     "required_for_plone": [
           ["4", "4.99.??"],
