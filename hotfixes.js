@@ -4,7 +4,7 @@ var hotfixes = {
   "Products.PloneHotfix20210518": {
     "required_for_plone": [
           ["4.3", "4.3.99"],
-          ["5", "5.99.??"],
+          ["5", "5.99.??"]
     ],
     "fixed_in_plone": [
     ],
@@ -13,7 +13,7 @@ var hotfixes = {
   "Products.PloneHotfix20200121": {
     "required_for_plone": [
           ["4", "4.99.??"],
-          ["5", "5.99.??"],
+          ["5", "5.99.??"]
     ],
     "fixed_in_plone": [
     ],
